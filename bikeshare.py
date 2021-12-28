@@ -117,7 +117,7 @@ def station_stats(df):
         (df) df - Pandas DataFrame containing city data filtered by month and day
     """
 
-    print('\nCalculating The Most Popular Stations and Trip...\n')
+    print('\nNow calculating The Most Popular Stations and Trip...\n')
     start_time = time.time()
 
     # display most commonly used start station
@@ -157,7 +157,7 @@ def trip_duration_stats(df):
     print("Mean travel time :", mean_travel_duration)
 
 
-    print("\nThis took %s seconds." % (time.time() - start_time))
+    print("\nThis took %s seconds to process." % (time.time() - start_time))
     print('-'*40)
 
 
@@ -233,7 +233,7 @@ def main():
         user_stats(df)        
         user_view(df)
 
-        restart = input('\nWould you like to restart? Enter yes or no.\n')
+        restart = input('\nWould you like to restart the program? Enter yes or no.\n')
         if restart.lower() != 'yes':
             break
 
