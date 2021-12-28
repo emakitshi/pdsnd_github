@@ -117,7 +117,7 @@ def station_stats(df):
         (df) df - Pandas DataFrame containing city data filtered by month and day
     """
 
-    print('\nCalculating The Most Popular Stations and Trip...\n')
+    print('\nNow calculating The Most Popular Stations and Trip...\n')
     start_time = time.time()
 
     # display most commonly used start station
